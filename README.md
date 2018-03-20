@@ -1,3 +1,2 @@
 #Admin site
-
-Admin site, with firebase Admin.
+With firebase Admin sdk simple website.

@@ -1,18 +1,99 @@
-body {
-  /* padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+body
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: #959595;
+    font: normal 12px/1.8em Arial, Helvetica, sans-serif;
+    background: silver;
 }
-
-a {
-  color: #00B7FF;
+.MainBody
+{
+    width: 770px;
+    margin: 0 auto;
+    padding: 0px;
 }
-
-
-#topbar {
-  color: #00B7FF;
-  background:black; 
-  height: 70px;
+.header
+{
+    background-color: Green;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: White;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
 }
-topbar {  
-  
+.header h3
+{
+    font-size: 30px;
+    line-height: 40px;
+}
+.left
+{
+    width: 150px;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    background-color: Fuchsia;
+    float: left;
+    text-align: center;
+}
+.left h4
+{
+    font-size: 20px;
+    color: Navy;
+    margin-top: 200px;
+}
+.left h5
+{
+    font-size: 20px;
+    color: Navy;
+}
+.center
+{
+    width: 420px;
+    background-color: Red;
+    margin-top: -16.1px;
+    margin-left: 150px;
+    padding: 0px;
+    height: 500px;
+}
+.center h1
+{
+    color: Navy;
+    text-align: center;
+    padding: 250 0 0 0;
+    vertical-align: bottom;
+    line-height: 500px;
+}
+.right
+{
+    width: 200px;
+    height: 500px;
+    background-color: Lime;
+    float: right;
+    margin-top: -500px;
+    margin-left: 0px;
+    padding: 0px;
+    color: Navy;
+    text-align: center;
+    line-height: 475px;
+}
+.footer
+{
+    background: yellow;
+    background-color: Green;
+    height: 50px;
+    text-align:center;
+    padding-left:0px;
+    font-size: 20px;
+    color: White;
+    margin: -30px 0px 0px 0px;
+    width: auto;
+}
+.footer h3
+{
+    font-size: 30px;
+    line-height: 40px;
 }

@@ -1,5 +1,6 @@
 const functions = require('firebase-functions');
-
+const admin = require('firebase-admin');
+admin.initializeApp(functions.config().firebase);
 // Create and Deploy Your First Cloud Functions
 // https://firebase.google.com/docs/functions/write-firebase-functions
 
@@ -7,3 +8,17 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
  response.send("Hello from Derrick!");
  console.log("Fist cloud function test")
 });
+
+exports.sanitizePost = functions.database.ref('/message').onWrite(event => {
+	const post = event.data.val()
+	if( post.sanitized ){
+		return
+	}
+	console.log("Sanitizeing new post "+event.params.pushId)
+	console.log(post)
+	post.sanitized = true
+	post.title = "hello"
+	post.body = "derrick"
+	return event.data.ref.set(post)
+})
+
